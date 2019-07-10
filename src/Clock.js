@@ -7,7 +7,6 @@ class Time extends Component {
   }
 
   tick = () => {
-    console.log('tick');
     this.setState({
       date: new Date()
     });
@@ -18,9 +17,9 @@ class Time extends Component {
       <div>{this.state.date.toLocaleTimeString()}</div>
     );
   }
-//   componentDidMount(){
-//      this.timer= setInterval(this.tick,1000)
-//   }
+  componentDidMount(){
+     this.timer= setInterval(this.tick,1000)
+  }
 //   componentWillUnmount(){
 //       clearInterval(this.timer)
 //   }
@@ -42,7 +41,7 @@ class Clock extends Component {
     return (
       <div>
         {this.state.isShowingClock && <Time />}
-        <button onClick={this.toggle}>Toggle time</button>
+        
       </div>
     );
   }

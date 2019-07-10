@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import Logo from "./Logo";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
-import Clock from './Clock';
+
 import { BrowserRouter, Route, Switch} from "react-router-dom";
 import Nav from "./Nav";
+import "./App.css";
 
 
 class App extends Component {
@@ -13,7 +14,6 @@ class App extends Component {
   }
   
   render() {
-    var pokemonNames = ['Squirtle', 'Bulbasaur', 'Charmander'];
 
     return (
       <BrowserRouter>
@@ -31,7 +31,7 @@ class App extends Component {
           <BestPokemon /> */}
 `
 
-          {/* <Clock /> */}
+         
           <Route path="/"  exact
           render={ (props)=><Logo {...props}
             appName="Pokedex"

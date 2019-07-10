@@ -1,7 +1,30 @@
 .App {
   text-align: center;
 }
+.Nav-pok {
+  display: flex;
+  background-color: turquoise;
+  height: 80px;
 
+  justify-content: space-around;
+ 
+}
+.Nav-list  {
+  display: flex; 
+
+  list-style: none;
+  justify-content: space-between;
+  
+  color: white
+}
+.Nav-list li{
+  display: flex;
+  margin: 20px;
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 20px
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
