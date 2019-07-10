@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 class BestPokemon extends Component {
   constructor(props) {
     super(props);
@@ -29,8 +29,11 @@ class BestPokemon extends Component {
       <ul>
         My favourite Pokemon is :{" "}
         {this.state.pokemonNames.map((name, index) => {
-          return <li key={index}>
-          <Link to ={`/bestPokemon/${name.entryNum}`}>{name.name}</Link></li>;
+          return (
+            <li key={index}>
+              <Link to={`/bestPokemon/${name.entryNum}`}>{name.name}</Link>
+            </li>
+          );
         })}
       </ul>
     );

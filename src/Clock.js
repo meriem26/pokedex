@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Time extends Component {
   constructor(props) {
@@ -13,16 +13,14 @@ class Time extends Component {
   };
 
   render() {
-    return (
-      <div>{this.state.date.toLocaleTimeString()}</div>
-    );
+    return <div>{this.state.date.toLocaleTimeString()}</div>;
   }
-  componentDidMount(){
-     this.timer= setInterval(this.tick,1000)
+  componentDidMount() {
+    this.timer = setInterval(this.tick, 1000);
   }
-//   componentWillUnmount(){
-//       clearInterval(this.timer)
-//   }
+  //   componentWillUnmount(){
+  //       clearInterval(this.timer)
+  //   }
 }
 
 class Clock extends Component {
@@ -32,18 +30,13 @@ class Clock extends Component {
   }
 
   toggle = () => {
-    this.setState((previousState) => {
+    this.setState(previousState => {
       return { isShowingClock: !previousState.isShowingClock };
     });
   };
 
   render() {
-    return (
-      <div>
-        {this.state.isShowingClock && <Time />}
-        
-      </div>
-    );
+    return <div>{this.state.isShowingClock && <Time />}</div>;
   }
 }
 
