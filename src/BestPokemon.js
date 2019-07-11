@@ -26,16 +26,19 @@ class BestPokemon extends Component {
     return this.state.isLoading ? (
       <h1>Is Loading ..</h1>
     ) : (
-      <ul>
-        My favourite Pokemon is :{" "}
+      <ul >
+        <div className="fav-pok">
+       <h2> My favourite Pokemon is :</h2>
         {this.state.pokemonNames.map((name, index) => {
           return (
-            <li key={index}>
+            <li id="list-names" key={index}>
               <Link to={`/bestPokemon/${name.entryNum}`}>{name.name}</Link>
             </li>
           );
         })}
+        </div>
       </ul>
+
     );
   }
 }

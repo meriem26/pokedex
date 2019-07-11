@@ -11,7 +11,6 @@ class Nav extends React.Component {
             {" "}
             <li>Main page</li>
           </Link>
-          <Link to="/pikatchou"> <li> Hello!!</li></Link>
           <Link to="/bestPokemon">
             {" "}
             <li> Best Pokemon </li>

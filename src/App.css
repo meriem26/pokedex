@@ -1,31 +1,12 @@
-.App {
-  text-align: center;
-}
-.Nav-pok {
+
+/* .Nav-pok {
   display: flex;
   background-color: turquoise;
   height: 80px;
-
+  text-align: left;
   justify-content: space-around;
- 
-}
+} */
 
-.Nav-list  {
-  display: flex; 
-  text-align: center;
-  list-style: none;
-  justify-content: space-between;
-  
-  color: white
-}
-.Nav-list li{
-  display: flex;
-  margin: 20px;
-  text-decoration: none;
-  color: aliceblue;
-  font-weight: bold;
-  font-size: 20px
-}
 .App-logo {
   text-align: center;
   justify-content: center;
@@ -33,16 +14,38 @@
   pointer-events: none;
 
 }
-
-.Nav-list {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#list-names{
+  text-align: center;
   justify-content: center;
+  font-weight: bold;
+}
+.caught-pok{
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.fav-pok{
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+}
+.lst-pok{
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.Nav-list {
+  background-color: yellowgreen;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: pink;
+  font-style: italic;
+  font-weight: bold;
+  list-style: none;
 }
 
 .App-link {

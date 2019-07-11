@@ -4,7 +4,7 @@ class PokemonInfo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      pokDetails: {}
+      pokDetails: {color:"", url:""}
     };
   }
   componentDidMount() {
@@ -25,6 +25,8 @@ class PokemonInfo extends Component {
     return (
       <div>
         <h2>Base happiness:{this.state.pokDetails.base_happiness}</h2>
+        <h2>Color:{this.state.pokDetails.color.name}</h2>
+        <h2>Url:{this.state.pokDetails.color.url}</h2>
       </div>
     );
   }

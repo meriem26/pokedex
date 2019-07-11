@@ -26,19 +26,17 @@ class CaughtPokemon extends Component {
 
   render() {
     return (
-      <div>
-        {/* <ul>{this.state.caughtPokemon.map(element => {
-                    return (
-                        <li>{element}</li>
-                    )
-                })}</ul> */}
+      <div className="caught-pok">
+       
         <p>
-          Caught{" "}
+        
+          Add a Pokemon Name: {this.props.date}
+          
+          <button onClick={this.catchPokemon}>Catch Pokemon</button>
           {this.state.caughtPokemon.map(element => {
             return <li>{element}</li>;
-          })}{" "}
-          Pokemon on: {this.props.date}
-          <button onClick={this.catchPokemon}>Catch Pokemon</button>
+          })}
+
         </p>
 
         <br />
